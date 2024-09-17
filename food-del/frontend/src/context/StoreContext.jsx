@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-//import axios from "axios";
+import axios from "axios";
 //import { food_list } from "../assets/assets";
 
 export const StoreContext = createContext(null);
@@ -31,15 +31,14 @@ const StoreContextProvider = (props) => {
     }
     return totalAmount;
   };
-  /*const fetchFoodList = async () => {
+
+  const fetchFoodList = async () => {
     //console.log(res);
-    let foodListUrl = url + "/api/food/list";
-    console.log(foodListUrl);
-    const res = await axios.get(foodListUrl);
-    console.log(res);
+
+    const res = await axios.get(url + "/api/food/list");
 
     setFoodList(res.data.data);
-  };*/
+  };
 
   /*useEffect(() => {
     async function loadData() {
@@ -50,9 +49,6 @@ const StoreContextProvider = (props) => {
     }
     loadData();
   }, []);*/
-  const fetchFoodList = async () => {
-    setFoodList(response.data.data);
-  };
 
   useEffect(() => {
     async function loadData() {
