@@ -50,7 +50,7 @@ const Navbar = ({ setShowLogin }) => {
         </a>
       </ul>
       <div className="navbar-right">
-        <a href="/search">
+        {/* <a href="/search">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -61,7 +61,7 @@ const Navbar = ({ setShowLogin }) => {
           >
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
           </svg>
-        </a>
+        </a> */}
         <div className="navbar-search-icon">
           <Link to="/cart">
             <img src={assets.basket_icon} alt="" />
@@ -74,11 +74,11 @@ const Navbar = ({ setShowLogin }) => {
           <div className="navbar-profie">
             <img src={assets.profile_icon} alt="" />
             <ul className="nav-profile-dropdown">
-              <li>
+              {/*} <li>
                 <img src={assets.bag_icon} alt="" />
                 <p>Orders</p>
-              </li>
-              <hr />
+        </li> */}
+              {/* <hr /> */}
               <li onClick={logout}>
                 <img src={assets.logout_icon} alt="" />
                 <p>Logout</p>
