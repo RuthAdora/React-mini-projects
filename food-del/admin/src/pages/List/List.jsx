@@ -11,7 +11,7 @@ const List = () => {
 
   const fetchList = async () => {
     const res = await axios.get(`${url}/api/food/list`);
-    // console.log(res.data);
+    console.log(res.data);
     if (res.data.success) {
       setList(res.data.data);
     } else {
@@ -38,7 +38,7 @@ const List = () => {
       <p>All Foods List</p>
       <div className="list-table">
         <div className="list-table-format title">
-          <b>image</b>
+          <b>Image</b>
           <b>Name</b>
           <b>Category</b>
           <b>Price</b>
@@ -50,7 +50,7 @@ const List = () => {
               <img src={`${url}/images/` + item.image} alt="" />
               <p>{item.name}</p>
               <p>{item.category}</p>
-              <p>${item.price}</p>
+              <p>Ksh{item.price}</p>
               <p className="cursor" onClick={() => removeFood(item._id)}>
                 X
               </p>
