@@ -4,14 +4,14 @@ import Sidebar from "../../Components/Sidebar/Sidebar";
 import Feed from "../../Components/Feed/feed";
 
 const Home = ({ sidebar }) => {
-  const [category, setCatogory] = useState(0);
+  const [category, setCategory] = useState(0);
 
   return (
     <>
       <Sidebar
         sidebar={sidebar}
         category={category}
-        setCatogory={setCatogory}
+        setCategory={setCategory}
       />
       <div className={`container ${sidebar ? "" : "large-container"}`}>
         <Feed category={category} />
