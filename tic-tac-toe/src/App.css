@@ -1,0 +1,19 @@
+.board-row {
+  background-color: blue;
+}
+.game {
+  background-color: beige;
+  align-items: center;
+}
+.game-board {
+  background-color: burlywood;
+}
+.game-info {
+  background-color: aqua;
+}
+.status {
+  background-color: beige;
+}
+.square {
+  background-color: aqua;
+}
